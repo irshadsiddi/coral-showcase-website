@@ -9,10 +9,10 @@ const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const fontMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
-  title: "ShipDash — Know what shipped, what it earned, overnight",
+  title: "Jackdaw",
   description:
-    "ShipDash pulls GitHub, Stripe, PostHog, and Vercel into one morning briefing for indie hackers. Stop opening 4 tabs before coffee.",
-  generator: "v0.app",
+    "The 100% Local Code-to-Cash Command Center. Query GitHub, Vercel, PostHog, and Stripe simultaneously using pure natural language right from your terminal. No ETL. No warehouse. Powered by Coral.",
+  generator: "Next.js",
 }
 
 export const viewport = {

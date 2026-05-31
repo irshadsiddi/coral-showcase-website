@@ -10,14 +10,17 @@ export function Footer() {
           <p className="mt-2 text-[13px] text-ink-tertiary">Ship. Measure. Grow.</p>
         </div>
         <div className="flex flex-wrap gap-6 text-[13px] text-ink-secondary">
+          <a href="#install" className="transition-colors hover:text-ink-primary">
+            Install
+          </a>
           <a href="#features" className="transition-colors hover:text-ink-primary">
             Features
           </a>
-          <a href="#" className="transition-colors hover:text-ink-primary">
+          <a href="https://github.com/roy-abir05/jackdaw" target="_blank" className="transition-colors hover:text-ink-primary">
             GitHub
           </a>
         </div>
-        <p className="text-[13px] text-ink-tertiary">© 2026 ShipDash</p>
+        <p className="text-[13px] text-ink-tertiary">© 2026 Jackdaw</p>
       </div>
     </footer>
   )

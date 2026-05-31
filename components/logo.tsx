@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { Anchor } from "lucide-react";
 
 export function LogoMark({ className }: { className?: string }) {
   return (
@@ -24,8 +25,8 @@ export function LogoMark({ className }: { className?: string }) {
 export function Logo({ className }: { className?: string }) {
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <LogoMark />
-      <span className="font-cal text-lg tracking-tight text-ink-primary">ShipDash</span>
+      <Anchor />
+      <span className="font-cal text-lg tracking-tight text-ink-primary">JACKDAW</span>
     </div>
   )
 }

@@ -1,9 +1,11 @@
 "use client"
 
+import { useState } from "react";
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { HeroPreview } from "@/components/landing/hero-preview"
+import { Terminal, GitMerge, Anchor, Copy, Check } from "lucide-react";
 
 const metrics = [
   { label: "MRR", value: "$12,400", change: "+$200" },
@@ -13,6 +15,16 @@ const metrics = [
 ]
 
 export function Hero() {
+
+  const [copied, setCopied] = useState(false);
+  const installCommand = "curl -fsSL https://jackdaw.sh/install | sh";
+
+   const handleCopy = () => {
+    navigator.clipboard.writeText(installCommand);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section className="relative overflow-hidden pt-28 pb-16 md:pt-32 md:pb-24">
       <div
@@ -26,6 +38,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <section id="install">
           <div className="text-center lg:text-left">
             <motion.a
               href="#features"
@@ -45,8 +58,9 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.05 }}
               className="mt-8 font-cal text-[2.75rem] leading-[1.08] tracking-[-0.03em] text-ink-primary text-balance sm:text-5xl lg:text-[3.25rem]"
             >
-              Know what shipped,
-              <br className="hidden sm:block" /> what it earned, overnight.
+              The 100% Local Command Center for Your
+              <br />Code-to-Cash Pipeline
+              {/* <br className="hidden sm:block" /> what it earned, overnight. */}
             </motion.h1>
 
             <motion.p
@@ -58,7 +72,7 @@ export function Hero() {
               GitHub, Stripe, PostHog, and Vercel in one morning briefing — so you stop opening four tabs before coffee.
             </motion.p>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
@@ -76,9 +90,52 @@ export function Hero() {
               >
                 Get early access
               </Link>
-            </motion.div>
+            </motion.div> */}
+            
+            <motion.div
+          initial={{ opacity: 0, x: -20, y: 20, rotate: 1 }}
+          animate={{ opacity: 1, x: -24, y: 24, rotate: 0 }}
+          transition={{ duration: 0.7, delay: 0.2, type: "spring", stiffness: 50 }}
+          className="relative w-full max-w-lg mx-auto lg:mx-0 lg:ml-auto"
+        >
+          {/* Subtle glow behind the terminal */}
+          <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-brand-violet/40 to-transparent opacity-50 blur-xl"></div>
+          
+          <div className="relative bg-[#0c0c0e] rounded-xl border border-white/[0.08] overflow-hidden shadow-2xl">
+            {/* Terminal Header */}
+            <div className="bg-white/[0.02] px-4 py-3 border-b border-white/[0.06] flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+              </div>
+              <span className="text-xs text-ink-tertiary font-mono">
+                bash ~ install
+              </span>
+              <button 
+                onClick={handleCopy}
+                className="text-ink-secondary hover:text-ink-primary transition-colors flex items-center justify-center w-6 h-6 rounded-md hover:bg-white/[0.05]"
+                aria-label="Copy install command"
+              >
+                {copied ? <Check className="w-4 h-4 text-brand-emerald" /> : <Copy className="w-4 h-4" />}
+              </button>
+            </div>
+            
+            {/* Terminal Body */}
+            <div className="p-8 text-left font-mono text-sm sm:text-base overflow-x-auto whitespace-nowrap">
+              <div className="flex items-center gap-3 text-ink-primary">
+                <span className="text-brand-violet">❯</span>
+                <span className="select-all">{installCommand}</span>
+              </div>
+              <div className="mt-4 flex items-center gap-3 text-ink-secondary opacity-60">
+                <span className="animate-pulse block w-2 h-4 bg-ink-secondary"></span>
+              </div>
+            </div>
           </div>
+        </motion.div>
 
+          </div>
+          </section>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}

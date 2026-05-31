@@ -23,7 +23,7 @@ const steps = [
   },
   {
     title: "Run your first report",
-    body: "ShipDash pulls the last 24 hours from all four sources and assembles your briefing.",
+    body: "Jackdaw pulls the last 24 hours from all four sources and assembles your briefing.",
     visual: (
       <p className="flex items-center gap-2 text-[13px] text-ink-secondary">
         <Check className="h-3.5 w-3.5 text-brand-emerald" strokeWidth={2} />

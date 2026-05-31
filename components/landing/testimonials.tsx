@@ -17,7 +17,7 @@ const posts = [
   {
     name: "Priya L.",
     handle: "@priyamakes",
-    body: "As a solo founder I can't be an analyst and a builder. ShipDash is my analyst — I just build.",
+    body: "As a solo founder I can't be an analyst and a builder. Jackdaw is my analyst — I just build.",
     metric: "0 → $5k MRR, first product",
   },
 ]

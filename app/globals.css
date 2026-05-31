@@ -43,7 +43,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* ShipDash custom palette */
+  /* Jackdaw custom palette */
   --color-base-bg: #09090b;
   --color-base-surface: #111113;
   --color-base-elevated: #18181b;
@@ -70,7 +70,7 @@
   --animate-marquee-slow: marquee 40s linear infinite;
 }
 
-/* Force the dark ShipDash theme globally */
+/* Force the dark Jackdaw theme globally */
 :root {
   --background: #09090b;
   --foreground: #fafafa;

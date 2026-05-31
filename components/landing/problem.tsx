@@ -1,9 +1,12 @@
-import { Reveal } from "@/components/reveal"
-import { SectionHeader } from "@/components/ui/surface"
+"use client";
+
+import { Reveal } from "@/components/reveal";
+import { SectionHeader } from "@/components/ui/surface";
+import { motion } from "framer-motion";
 
 export function Problem() {
   return (
-    <section className="border-t border-white/[0.06] px-6 py-24 md:py-32">
+    <section className="border-t border-white/[0.06] px-6 py-24 md:py-32 -my-12">
       <div className="mx-auto max-w-4xl">
         <Reveal>
           <SectionHeader
@@ -14,10 +17,33 @@ export function Problem() {
           />
         </Reveal>
 
+        <div className="max-w-4xl mx-auto px-6 text-center my-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="space-y-6 text-md md:text-lg text-ink-secondary leading-relaxed"
+          >
+            <p>
+              Built for the trenches, not the boardroom. Stop wasting hours
+              context-switching between GitHub, Vercel, and Stripe to debug
+              deployments. <br /> <br />{" "}
+              <span className="text-lg md:text-xl text-ink-primary">
+                <span className="text-brand-violet">Jackdaw</span> is a unified,
+                terminal-native interface that cuts through the noise, giving
+                you fast, accurate data completely under your control.
+              </span>
+            </p>
+          </motion.div>
+        </div>
+
         <div className="mt-14 grid gap-4 md:grid-cols-2">
           <Reveal className="rounded-xl border border-white/[0.06] bg-base-surface p-6">
             <p className="text-[13px] font-medium text-ink-tertiary">Before</p>
-            <p className="mt-2 text-[15px] text-ink-primary">Your morning routine</p>
+            <p className="mt-2 text-[15px] text-ink-primary">
+              Your morning routine
+            </p>
             <div className="mt-5 space-y-2">
               {[
                 { app: "GitHub", note: "47 commits — no context" },
@@ -34,12 +60,21 @@ export function Problem() {
                 </div>
               ))}
             </div>
-            <p className="mt-5 text-[13px] text-ink-tertiary">~47 min tab-switching daily</p>
+            <p className="mt-5 text-[13px] text-ink-tertiary">
+              ~47 min tab-switching daily
+            </p>
           </Reveal>
 
-          <Reveal delay={0.06} className="rounded-xl border border-white/[0.08] bg-base-surface p-6">
-            <p className="text-[13px] font-medium text-ink-tertiary">After ShipDash</p>
-            <p className="mt-2 text-[15px] text-ink-primary">Your new morning</p>
+          <Reveal
+            delay={0.06}
+            className="rounded-xl border border-white/[0.08] bg-base-surface p-6"
+          >
+            <p className="text-[13px] font-medium text-ink-tertiary">
+              After Jackdaw
+            </p>
+            <p className="mt-2 text-[15px] text-ink-primary">
+              Your new morning
+            </p>
             <div className="mt-5 space-y-3 rounded-lg border border-white/[0.05] bg-base-bg p-4 font-mono text-[13px]">
               <p className="text-ink-primary">v2.1 shipped · 3 features</p>
               <div className="flex justify-between text-ink-secondary">
@@ -56,10 +91,12 @@ export function Problem() {
               </div>
               <p className="text-ink-tertiary">0 critical errors</p>
             </div>
-            <p className="mt-5 text-[13px] text-ink-tertiary">~30 seconds. Everything you need.</p>
+            <p className="mt-5 text-[13px] text-ink-tertiary">
+              ~30 seconds. Everything you need.
+            </p>
           </Reveal>
         </div>
       </div>
     </section>
-  )
+  );
 }

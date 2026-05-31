@@ -7,6 +7,7 @@ import { Logo } from "@/components/logo"
 import { cn } from "@/lib/utils"
 
 const links = [
+  { label: "Philosophy", href: "#philosophy" },
   { label: "Features", href: "#features" },
   { label: "Integrations", href: "#integrations" },
 ]
@@ -36,7 +37,7 @@ export function LandingNav() {
         )}
       >
         <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-          <Link href="/" aria-label="ShipDash home">
+          <Link href="/" aria-label="Jackdaw home">
             <Logo />
           </Link>
 

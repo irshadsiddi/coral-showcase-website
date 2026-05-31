@@ -3,6 +3,7 @@ import { Problem } from "@/components/problem_new"
 import { Philosophy } from "@/components/philosophy_new"
 import { FeaturesBento } from "@/components/features-bento_new"
 import { Demo } from "@/components/demo_new"
+import { Footer } from "@/components/footer_new"
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
       <Philosophy />
       <FeaturesBento />
       <Demo />
+      <Footer />
     </main>
   )
 }

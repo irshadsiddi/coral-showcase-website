@@ -13,12 +13,6 @@ export function Footer() {
           <a href="#features" className="transition-colors hover:text-ink-primary">
             Features
           </a>
-          <a href="#pricing" className="transition-colors hover:text-ink-primary">
-            Pricing
-          </a>
-          <Link href="/dashboard" className="transition-colors hover:text-ink-primary">
-            Dashboard
-          </Link>
           <a href="#" className="transition-colors hover:text-ink-primary">
             GitHub
           </a>

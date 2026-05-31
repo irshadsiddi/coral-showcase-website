@@ -11,7 +11,7 @@ const fontMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 export const metadata: Metadata = {
   title: "ShipDash — Know what shipped, what it earned, overnight",
   description:
-    "ShipDash pulls GitHub, Stripe, PostHog, and Sentry into one morning briefing for indie hackers. Stop opening 4 tabs before coffee.",
+    "ShipDash pulls GitHub, Stripe, PostHog, and Vercel into one morning briefing for indie hackers. Stop opening 4 tabs before coffee.",
   generator: "v0.app",
 }
 

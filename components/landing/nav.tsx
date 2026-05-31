@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils"
 const links = [
   { label: "Features", href: "#features" },
   { label: "Integrations", href: "#integrations" },
-  { label: "Pricing", href: "#pricing" },
 ]
 
 export function LandingNav() {
@@ -55,7 +54,7 @@ export function LandingNav() {
 
           <div className="flex items-center gap-2">
             <Link
-              href="/dashboard"
+              href="/connect"
               className="hidden px-3 py-1.5 text-[13px] text-ink-secondary transition-colors hover:text-ink-primary sm:block"
             >
               Sign in

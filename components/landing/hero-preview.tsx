@@ -19,7 +19,7 @@ export function HeroPreview() {
           <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
-          <span className="ml-2 font-mono text-[11px] text-ink-tertiary">shipdash.app/dashboard</span>
+          <span className="ml-2 font-mono text-[11px] text-ink-tertiary">shipdash.app</span>
         </div>
 
         <div className="grid gap-px bg-white/[0.04] p-4 md:grid-cols-[140px_1fr] md:p-5">

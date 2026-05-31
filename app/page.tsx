@@ -6,8 +6,6 @@ import { FeaturesBento } from "@/components/landing/features-bento"
 import { IntegrationsSection } from "@/components/landing/integrations-section"
 import { HowItWorks } from "@/components/landing/how-it-works"
 import { Testimonials } from "@/components/landing/testimonials"
-import { Pricing } from "@/components/landing/pricing"
-import { FinalCta } from "@/components/landing/final-cta"
 import { Footer } from "@/components/landing/footer"
 
 export default function Page() {
@@ -21,8 +19,6 @@ export default function Page() {
       <IntegrationsSection />
       <HowItWorks />
       <Testimonials />
-      <Pricing />
-      <FinalCta />
       <Footer />
     </main>
   )

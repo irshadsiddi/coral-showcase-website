@@ -5,7 +5,7 @@ const posts = [
   {
     name: "Sarah K.",
     handle: "@sarahbuilds",
-    body: "I used to spend 45 minutes every morning across Stripe, PostHog, and Sentry. Now I read one Slack message and I know everything.",
+    body: "I used to spend 45 minutes every morning across Stripe, PostHog, and Vercel. Now I read one Slack message and I know everything.",
     metric: "MRR $2k → $8k in 4 months",
   },
   {

@@ -55,7 +55,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="mx-auto mt-5 max-w-md text-[17px] leading-relaxed text-ink-secondary text-pretty lg:mx-0"
             >
-              GitHub, Stripe, PostHog, and Sentry in one morning briefing — so you stop opening four tabs before coffee.
+              GitHub, Stripe, PostHog, and Vercel in one morning briefing — so you stop opening four tabs before coffee.
             </motion.p>
 
             <motion.div
@@ -65,10 +65,10 @@ export function Hero() {
               className="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start"
             >
               <Link
-                href="/dashboard"
+                href="#features"
                 className="inline-flex h-10 w-full items-center justify-center rounded-lg bg-ink-primary px-5 text-sm font-medium text-base-bg transition-opacity hover:opacity-90 sm:w-auto"
               >
-                View live dashboard
+                See product preview
               </Link>
               <Link
                 href="#cta"

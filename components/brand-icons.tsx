@@ -26,10 +26,10 @@ export function PostHogIcon({ className }: IconProps) {
   )
 }
 
-export function SentryIcon({ className }: IconProps) {
+export function VercelIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" className={cn("h-5 w-5", className)} fill="currentColor" aria-hidden>
-      <path d="M13.05 2.9a1.2 1.2 0 0 0-2.08 0L7.6 8.78a13.2 13.2 0 0 1 6.9 11.02h-2.18A11 11 0 0 0 6.5 10.67l-1.9 3.3a4.7 4.7 0 0 1 2.96 5.83h-4.4a.6.6 0 0 1-.52-.9l1.55-2.68a3.3 3.3 0 0 0-1.03-.6L1.6 18.3a1.2 1.2 0 0 0 1.04 1.8h5.92c.31-2.31-.78-4.62-2.62-5.86l.96-1.66a8.55 8.55 0 0 1 3.7 7.52h4.55a15.1 15.1 0 0 0-6.4-12.55l1.85-3.2a.6.6 0 0 1 1.04 0l9.17 15.88a.6.6 0 0 1-.52.9h-2.02c.02.4.02.8 0 1.2h2.02a1.8 1.8 0 0 0 1.56-2.7L13.05 2.9Z" />
+      <path d="M12 3.25L3 19h18L12 3.25z" />
     </svg>
   )
 }

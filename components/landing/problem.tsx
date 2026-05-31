@@ -23,7 +23,7 @@ export function Problem() {
                 { app: "GitHub", note: "47 commits — no context" },
                 { app: "Stripe", note: "$12,400 MRR — no trend" },
                 { app: "PostHog", note: "Charts with no labels" },
-                { app: "Sentry", note: "127 issues — alarming" },
+                { app: "Vercel", note: "127 issues — alarming" },
               ].map((row) => (
                 <div
                   key={row.app}

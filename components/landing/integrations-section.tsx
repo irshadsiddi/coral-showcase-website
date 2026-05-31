@@ -1,14 +1,14 @@
 import { Reveal } from "@/components/reveal"
 import { SectionHeader } from "@/components/ui/surface"
 import { integrations } from "@/lib/mock-data"
-import { GitHubIcon, StripeIcon, PostHogIcon, SentryIcon } from "@/components/brand-icons"
+import { GitHubIcon, StripeIcon, PostHogIcon, VercelIcon } from "@/components/brand-icons"
 import { cn } from "@/lib/utils"
 
 const icons: Record<string, React.ReactNode> = {
   github: <GitHubIcon className="h-4 w-4" />,
   stripe: <StripeIcon className="h-4 w-4" />,
   posthog: <PostHogIcon className="h-4 w-4" />,
-  sentry: <SentryIcon className="h-4 w-4" />,
+  vercel: <VercelIcon className="h-4 w-4" />,
 }
 
 export function IntegrationsSection() {

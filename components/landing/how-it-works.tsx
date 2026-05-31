@@ -2,15 +2,15 @@ import { Reveal } from "@/components/reveal"
 import { SectionHeader } from "@/components/ui/surface"
 import { LogoMark } from "@/components/logo"
 import { Check } from "lucide-react"
-import { GitHubIcon, StripeIcon, PostHogIcon, SentryIcon } from "@/components/brand-icons"
+import { GitHubIcon, StripeIcon, PostHogIcon, VercelIcon } from "@/components/brand-icons"
 
 const steps = [
   {
     title: "Connect your stack",
-    body: "Paste read-only API keys from GitHub, Stripe, PostHog, and Sentry. No OAuth wizard.",
+    body: "Paste read-only API keys from GitHub, Stripe, PostHog, and Vercel. No OAuth wizard.",
     visual: (
       <div className="flex gap-2">
-        {[GitHubIcon, StripeIcon, PostHogIcon, SentryIcon].map((Icon, i) => (
+        {[GitHubIcon, StripeIcon, PostHogIcon, VercelIcon].map((Icon, i) => (
           <div
             key={i}
             className="flex h-9 w-9 items-center justify-center rounded-md border border-white/[0.06] bg-base-bg text-ink-tertiary"

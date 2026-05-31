@@ -40,15 +40,6 @@ export function CommandMenu() {
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Navigation">
-          <CommandItem onSelect={() => run(() => router.push("/dashboard"))}>
-            <LayoutDashboard />
-            Go to Dashboard
-            <CommandShortcut>D</CommandShortcut>
-          </CommandItem>
-          <CommandItem onSelect={() => run(() => router.push("/dashboard"))}>
-            <CalendarDays />
-            {"View today's report"}
-          </CommandItem>
           <CommandItem onSelect={() => run(() => router.push("/connect"))}>
             <Plug />
             Connect integration

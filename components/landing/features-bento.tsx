@@ -136,7 +136,7 @@ export function FeaturesBento() {
               </Inner>
             </BentoCard>
 
-            <BentoCard area="errors" icon={AlertTriangle} title="Error radar" body="Sentry issues triaged before you open your laptop.">
+            <BentoCard area="errors" icon={AlertTriangle} title="Error radar" body="Vercel issues triaged before you open your laptop.">
               <Inner className="space-y-2">
                 {[
                   { msg: "CSV parsing", n: 2 },
